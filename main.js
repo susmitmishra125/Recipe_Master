@@ -24,17 +24,20 @@ document.querySelector("form").addEventListener("submit", function(e) {
     let name = document.getElementById("name").value;
     let person = document.getElementById("person").value;
     let serving = document.getElementById("serving").value;
+		let yield = person*serving;
+		let list = document.getElementById("myList");
+		let error = document.getElementById("errormsg");
+		list.innerHTML='';// to clear text
+		error.innerText = '';// to clear text
 		if (name in dict_data)
 		{
-			console.log("present");
+			// item is present in the json file
+			// console.log("present");
 			// loop through the dict 
-			var multiplier = person*serving;
-			let list = document.getElementById("myList");
-			list.innerHTML='';// to clear text
-			for (var key in dict_data[name]) {
+			// console.log(dict_data[name]["ingredients"]);
+			for (let row of dict_data[name]["ingredients"]) {
 				let listItem = document.createElement("li");
-				console.log(key + " : " + scale(dict_data[name][key],multiplier));
-				listItem.innerText = key + " : " + scale(dict_data[name][key],multiplier);
+				listItem.innerText = row[0] + " : " + (row[1]*yield/dict_data[name]["yield"][0]).toFixed(2)+row[2];
 				list.appendChild(listItem);
 				let br = document.createElement("br");
 				list.appendChild(br);
@@ -43,7 +46,6 @@ document.querySelector("form").addEventListener("submit", function(e) {
 		else
 		{
 			console.log("not present");
-			let error = document.getElementById("errormsg");
 			error.innerText = "Please enter a valid dish name";
 		}
 });
