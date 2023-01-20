@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import data from './data.json';
-// console.log(data);
+import data from '../data/data.json';
 
 function ItemIngredients() {
   const [name, setName] = useState('');
