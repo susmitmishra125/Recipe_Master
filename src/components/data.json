@@ -1,0 +1,34 @@
+{
+	"Mirch pakoda":
+	{
+		"yield":[7500,"no"],
+		"ingredients":
+		[
+			["Pakoda Big Mirchi",100,"kg"],
+			["Besan",50,"kg"],
+			["Rice Flour",12.5,"kg"],
+			["Haldi Powder",1000,"gm"],
+			["Mirch Powder",2000,"gm"],
+			["Salt",2500,"gm","for batter"],
+			["Sugar",3,"kg","for batter"],
+			["Oil",10,"L","hot oil to add in the batter"],
+			["Water approx",75,"kg"],
+			["Black Salt",2500,"gm"],
+			["Oil",60,"L","to deep fry"]
+		]
+	},
+	"Amrakhand":
+	{
+		"yield":[100,"L"],
+		"ingredients":[
+			["Chakka",50,"kg"],
+			["Sugar Powder",50,"kg"],
+			["Mango Pulp",10,"kg"],
+			["Mango",5,"kg"],
+			["Mango Flavor",100,"ml"],
+			["Kesari Color",20,"ml"],
+			["Elayachi",200,"gm"],
+			["Jaiphal",50,"gm"]
+		]
+	}
+}
