@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.c8a30608.js",
-    "index.html": "/index.html",
-    "main.c8a30608.js.map": "/static/js/main.c8a30608.js.map"
+    "main.js": "/Recipe_Master/static/js/main.c8a30608.js",
+    "index.html": "/Recipe_Master/index.html",
+    "main.c8a30608.js.map": "/Recipe_Master/static/js/main.c8a30608.js.map"
   },
   "entrypoints": [
     "static/js/main.c8a30608.js"
