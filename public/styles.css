@@ -1,0 +1,50 @@
+header {
+  background-color: #8781fa;
+  margin: auto -16px;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	/* width: 250px; sets the width of the box to 250 pixels */
+	/* height: 100px; sets the height of the box to 150 pixels */
+}
+title{
+  background-color: #8781fa;
+  margin: auto -16px;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+.error-container {
+  color: red;
+
+}
+
+.ingredient-name{
+	list-style-type: square;
+}
+.ingredient-quantity{
+	list-style-type: square;
+}
+.ingredient-unit{
+	list-style-type: square;
+}
+.ingredient-info{
+	list-style-type: square;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+td,th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
