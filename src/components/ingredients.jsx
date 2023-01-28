@@ -51,7 +51,7 @@ function ItemIngredients() {
 				<input className="item-input" type="text" placeholder="Search Item Name" value={name} onChange={e => setName(e.target.value)} /><br/>
         <input className="person-input" type="text" placeholder="No of persons" value={person} onChange={e => setPerson(e.target.value)} />
         <input className="serving-input" type="text" placeholder="Serving Size" value={serving} onChange={e => setServing(e.target.value)} />
-        <button type="submit">Submit</button>
+        <button className = "submit-button" type="submit">Submit</button>
       </form>	
       <table className="ingredientTable">
 				<tr>
