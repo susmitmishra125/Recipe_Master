@@ -1,0 +1,104 @@
+/* .App{
+	display:flex;
+	justify-content: center;
+	flex-direction:column;
+	align-items: center;
+} */
+header {
+  background-color: #8781fa;
+  margin: auto -16px;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	font-family:Arial, Helvetica, sans-serif
+	/* width: 250px; sets the width of the box to 250 pixels */
+	/* height: 100px; sets the height of the box to 150 pixels */
+}
+title{
+  background-color: #8781fa;
+  margin: auto -16px;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	font-family:Arial, Helvetica, sans-serif
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+.error-container {
+  color: red;
+
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+td,th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.item-input {
+	/* allign center */
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+}
+.person-input {
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-right: 1%;
+	margin-top: 1%;
+	width: 100px;
+	height:30px;
+	font-size: 16px;
+	padding-left: 4px;
+}
+.serving-input {
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-right: 1%;
+	margin-top: 1%;
+	width: 100px;
+	height:30px;
+	font-size: 16px;
+	padding-left: 4px;
+}
+.submit-button{
+	background-color: #e4e6f9;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-top: 1%;
+	margin-left: 4%;
+	width: 100px;
+	height:30px;
+	font-size: 16px;
+}
+.recipe-button{
+	background-color: #f4f4fc;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 100px;
+	height:30px;
+	font-size: 16px;
+}
+.recipe-box{
+	word-wrap:break-word;
+	width:28em;
+	font-size: 18;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #7f7ff9;
+}
