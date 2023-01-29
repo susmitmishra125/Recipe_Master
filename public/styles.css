@@ -45,7 +45,7 @@ td,th {
 }
 .item-input {
 	/* allign center */
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -62,7 +62,7 @@ td,th {
 	margin-top: 1%;
 	width: 100px;
 	height:30px;
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 4px;
 }
 .serving-input {
@@ -72,7 +72,7 @@ td,th {
 	margin-top: 1%;
 	width: 100px;
 	height:30px;
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 4px;
 }
 .submit-button{
@@ -83,5 +83,22 @@ td,th {
 	margin-left: 4%;
 	width: 100px;
 	height:30px;
-	font-size: 14px;
+	font-size: 16px;
+}
+.recipe-button{
+	background-color: #f4f4fc;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 100px;
+	height:30px;
+	font-size: 16px;
+}
+.recipe-box{
+	word-wrap:break-word;
+	width:28em;
+	font-size: 18;
+	font-family:Arial, Helvetica, sans-serif
+	
 }
