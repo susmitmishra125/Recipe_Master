@@ -48,6 +48,7 @@ function ItemIngredients() {
       setError("Please enter a valid dish name");
 			setRecipeButton(false);
     }
+		console.log(ingredients[0][4]);
   }
 	function toggleRecipeView(event){
 		event.preventDefault();
