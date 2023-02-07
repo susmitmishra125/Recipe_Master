@@ -8,7 +8,9 @@
 - NaN values in ingredients.xlsx and in .json file
 - ingredient name contain forward slash causing routing issues
 
-
+## ToDos
+- Add Ingredient List and map them
+- Ability to modify recipies
 ## License
 
 [MIT](LICENSE) © Susmit Mishra
