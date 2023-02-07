@@ -1,5 +1,5 @@
 
-import data from '../data/data.json'
+import data from '../data/data_generated.json'
 
 function Ingredients(name, persons, serving){
 	let ingredients = [];

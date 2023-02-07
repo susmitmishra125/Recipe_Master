@@ -1,11 +1,7 @@
-import React from 'react';
 import { IonCol, IonGrid, IonRow } from '@ionic/react';
-import {useState} from 'react'
 
 import Ingredients from '../JS/Ingredients';
 import '../main.css';
-import data from '../data/data.json'
-import { person } from 'ionicons/icons';
 
 
 function Grid(props) {

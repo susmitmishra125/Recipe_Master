@@ -1,7 +1,7 @@
 import {IonInput,IonList,IonItem, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonLabel, IonButtons, IonBackButton } from '@ionic/react';
 import React, {useState} from 'react';
 import { useParams } from 'react-router';
-import data from '../data/data.json';
+import data from '../data/data_generated.json';
 
 import Grid from './Grid';
 
@@ -43,7 +43,9 @@ const Item : React.FC = () => {
 					</IonItem>
 				</IonList>	
     	</IonContent>
-			<Grid name = {item} persons = {persons} serving = {serving}/>
+			{/* add a submit button */}
+			
+			{/* <Grid name = {item} persons = {persons} serving = {serving}/> */}
     </IonPage>
   );
 };

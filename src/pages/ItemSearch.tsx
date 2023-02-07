@@ -1,6 +1,6 @@
 import {IonMenuButton,IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSearchbar, IonList, IonItem } from '@ionic/react';
 import React, { useState } from 'react';
-import data from '../data/data.json';
+import data from '../data/data_generated.json';
 import { useHistory } from 'react-router-dom';
 
 
