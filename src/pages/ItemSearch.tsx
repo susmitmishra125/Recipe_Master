@@ -9,7 +9,6 @@ const items = Object.keys(data);
 items.sort();
 
 const ItemSearch: React.FC = () => {
-	// const items = ['Apple', 'Banana', 'Orange', 'Pineapple', 'Strawberry', 'Watermelon', 'ssfdg', '1', '2', '3','4', '5', '6','7', '8', '9', ];
   const [ItemName, setItemName] = useState('');
   const [filteredItems, setFilteredItems] = useState(items);
   const history = useHistory();
@@ -28,25 +27,27 @@ const ItemSearch: React.FC = () => {
   };
 
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-					<IonButton slot = "start">
-						<IonMenuButton/>
-					</IonButton>
-          <IonTitle>Item Search</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-			{/* search bar */}
-      <IonContent className="ion-padding">
-        <IonSearchbar showClearButton="focus" value={ItemName} onIonChange={handleChange}></IonSearchbar>
-        <IonList>
-          {filteredItems.map(item => (
-            <IonItem key={item} onClick={() => handleClick(item)}>{item}</IonItem>
-          ))}
-        </IonList>
-      </IonContent>
-    </IonPage>
+		<>
+			<IonPage>
+				<IonHeader>
+					<IonToolbar>
+						<IonButton slot = "start">
+							<IonMenuButton/>
+						</IonButton>
+						<IonTitle>Item Search</IonTitle>
+					</IonToolbar>
+				</IonHeader>
+				{/* search bar */}
+				<IonContent className="ion-padding">
+					<IonSearchbar showClearButton="focus" value={ItemName} onIonChange={handleChange}></IonSearchbar>
+					<IonList>
+						{filteredItems.map((item, index) => (
+							<IonItem key={item} onClick={() => handleClick(item)}>{index + 1}. {item}</IonItem>
+						))}
+					</IonList>
+				</IonContent>
+			</IonPage>
+		</>
   );
 };
 

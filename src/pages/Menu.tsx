@@ -21,7 +21,7 @@ import { Route } from 'react-router-dom';
 import ItemSearch from './ItemSearch';
 import SettingsPage from './SettingsPage';
 import Item from './Item';
-
+import IngredientsList from './IngredientsList';
 
 const Menu: React.FC = () => {
 	const paths = [
@@ -56,6 +56,7 @@ const Menu: React.FC = () => {
 					<Route exact path='/ItemSearch' component={ItemSearch}/>
 					<Route exact path='/settings' component={SettingsPage}/>
 					<Route exact path='/item/:item' component={Item}/>
+					<Route path='/Ingredients/:item/:person/:serving' component={IngredientsList}/>
 				</IonRouterOutlet>
 			</IonSplitPane>
 		</IonPage>
