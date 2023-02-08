@@ -23,7 +23,7 @@ const IngredientsList : React.FC = () => {
 					</IonTitle>
 				</IonToolbar>
 			</IonHeader>
-			<IonContent>
+			<IonContent >
 				<IonGrid>
 					<IonRow className="header">
 							<IonCol size = "3">Name</IonCol>

@@ -14,6 +14,7 @@ import{
 import{
 	searchOutline,
 	settingsOutline,
+	walletOutline,
 } from 'ionicons/icons'
 
 import { Route } from 'react-router-dom';
@@ -22,11 +23,13 @@ import ItemSearch from './ItemSearch';
 import SettingsPage from './SettingsPage';
 import Item from './Item';
 import IngredientsList from './IngredientsList';
+import Purchase from './Purchase';
 
 const Menu: React.FC = () => {
 	const paths = [
 		{name : 'Search', path: '/ItemSearch',icon: searchOutline},
 		{name : 'Settings', path: '/settings', icon: settingsOutline},
+		{name : 'Events', path: '/purchase', icon : walletOutline}
 	]
 
 	return (
@@ -57,6 +60,7 @@ const Menu: React.FC = () => {
 					<Route exact path='/settings' component={SettingsPage}/>
 					<Route exact path='/item/:item' component={Item}/>
 					<Route path='/Ingredients/:item/:person/:serving' component={IngredientsList}/>
+					<Route exact path = '/purchase' component={Purchase}/>
 				</IonRouterOutlet>
 			</IonSplitPane>
 		</IonPage>
